@@ -1,0 +1,208 @@
+html {
+    scroll-behavior: smooth;
+   }
+   
+
+.bg1, .bg {
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg1
+{
+     background-image: url("cover.jpg"); 
+    min-width: 100px;
+    min-height: 650px;
+    width: 100%;
+    height: auto;
+}
+
+.b12
+{
+    background-image: url(B12.jpg);
+    min-width: 100px;
+    min-height: 500px;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hover-fade{
+
+    transition-duration: 0.5s;
+    position: relative;
+}
+
+.hover-fade:hover
+{
+    opacity: 0;
+}
+
+.hover-slide
+{
+    position: relative;
+    animation-name: slide;
+    animation-duration: 3s;
+}
+@keyframes slide {
+    0% {left:0px;}
+    50% {left:-50px;}
+    100% {left:0px;}
+}
+
+.front
+{
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+.behind
+{
+    position: absolute;
+}
+
+#colors {
+    position: relative;
+    margin: auto;
+}
+
+#colors img{
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+}
+
+
+#colors img.transparent{
+    opacity: 0;
+}
+
+#colors_onclick{
+    cursor: pointer;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+
+html,
+body,
+
+section{
+    height: 100vh;
+}
+
+.tag {
+
+}
+
+.tag{
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.yellow
+{
+    background-color: lightyellow;
+}
+
+.blue{
+    background-color: lightblue;
+}
+
+.red{
+    background-color: lightcoral;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+#updates {
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:100; 
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 2rem;
+    width: 45%;
+    margin:2rem;
+    float: right;
+    font-size: 1.2rem;
+  }
+
+  .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+
+    overflow-x: auto;
+    text-align: center;
+}
