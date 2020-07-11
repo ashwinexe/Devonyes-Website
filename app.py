@@ -25,7 +25,7 @@ app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
-db = SQL("sqlite:///users.db")
+db = SQL("postgres://hfdxqepjvbkzzq:35893657093446b6a5ae4ee614d17d9b119522eabf62ed79fe5a785364b206ce@ec2-3-215-83-17.compute-1.amazonaws.com:5432/deeas6g6vusec1")
 
 @app.route("/")
 def index():
