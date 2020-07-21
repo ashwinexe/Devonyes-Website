@@ -96,7 +96,7 @@ def register():
         password = request.form.get("password")
 
         if not password:
-            flash("You mus provide a password.")
+            flash("You must provide a password.")
             return render_template("register.html") 
         confirmation = request.form.get("confirmation")
 
