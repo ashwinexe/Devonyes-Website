@@ -207,7 +207,7 @@ section{
     text-align: center;
     
 }
-
+/* 
 video
 {
     position: fixed;
@@ -215,8 +215,6 @@ video
     left: 50%;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
@@ -224,4 +222,14 @@ video
   background-size: cover;
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
+} */
+
+video
+{
+    height: 100%;
+    width: 100%;
 }
+.text-responsive {
+    font-size: calc(100% + 1vw + 1vh);
+  }
+  

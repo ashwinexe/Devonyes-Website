@@ -2,10 +2,26 @@
 {% block title %}
 Devonyes
 {% endblock %}
+{% block home %} <a href="#"> {% endblock %}
 
 {% block link %}<li class="nav-item" role="presentation"><a class="nav-link " href="#Team">Team</a></li>{% endblock %}
 
 {% block main %}
+
+<div style="padding-top: 10px;">
+
+
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="prelogo fade-in">
+      <img src="../static/img/devonyes vector white.png" class="prelogo">
+    </div>
+
+    <div class="loader-section section-left"></div>
+          <div class="loader-section section-right"></div>
+  </div>
+
 
     <!-- <div class="carousel slide fade-in" data-ride="carousel" id="carousel-1" data-interval="3000">
       <div class="carousel-inner" role="listbox">
@@ -21,17 +37,13 @@ Devonyes
           <li data-target="#carousel-1" data-slide-to="2"></li>
           </ol>
   </div> -->
+    <!-- <div class="vignette"></div> -->
+    <video loop preload autoplay>
+      <source id="source_polar_mp4" src="../static/img/gen/index-video.mp4">
+      
+    </video>
 
-  <video  autoplay muted loop>
-    <source src="../static/img/gen/index-video.mp4" type="video/mp4">
-  </video>
-
-
-
-    <!-- <div class="bg1 fade-in ">
-    </div> -->
-
-    <div style="align-content: center; background: Black; border: none; opacity: 50%; margin-top:500px">
+    <div style="align-content: center; background: Black; border: none; opacity: 50%;">
         <img src="../static/img/down.gif" style="width: 5%; margin-left: 50%; background: transparent; border: none;  -webkit-filter: invert(1);
         filter: invert(1);">
         </div>
@@ -39,7 +51,7 @@ Devonyes
           <div class="" style="height:800px; background-image: url('../static/img/gen/cover.jpg'); background-size: cover; background-color: #464646; background-position:center; background-attachment: fixed">
 
             <div style=" color: white; background-color:black ; text-align: center; padding: 20px 80px;">
-              <h2 style="font-size: 2vw">A platform to the best dancers of SNIST in representing the college at various events and competitions.</h2>
+              <h2 class="text-responsive">A platform to the best dancers of SNIST in representing the college at various events and competitions.</h2>
             </div>
             <div id="updates">
               <h1>No Updates</h1>
@@ -67,7 +79,7 @@ Devonyes
                       <p class="title">Chief Mentor</p>
                      </div>
 
-                     <div class="module col-md-2 col-lg-3 item"><img class="rounded-circle" src="../static/img/crew/bhavya.jpg">
+                     <div class="module col-md-2 col-lg-3 item"><img class="rounded-circle" src="../static/img/crew/bhavya.jpeg">
                        <h3 class="name">Bhavya</h3>
                        <p class="title">Mentor</p>
                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="https://www.facebook.com/profile.php?id=100009119068382"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
@@ -111,7 +123,7 @@ Devonyes
 
                             <div class="row people">
                               <div class="module col-md-2 col-lg-3 item"><img class="rounded-circle" src="../static/img/crew/riteshvk.jpeg">
-                                  <h3 class="name">Ristesh vk</h3>
+                                  <h3 class="name">Ritesh VK</h3>
                                   <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                               </div>
 
@@ -122,11 +134,11 @@ Devonyes
                               </div>
 
                               <div class="module col-md-2 col-lg-3 item"><img class="rounded-circle" src="../static/img/crew/ritesh.jpg">
-                                  <h3 class="name">Ritesh</h3>
+                                  <h3 class="name">Rithesh</h3>
                                   <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
                               </div>
                               <div class="module col-md-2 col-lg-3 item"><img class="rounded-circle" src="../static/img/crew/vijayasri.jpeg">
-                                <h3 class="name">D.SAI VIJAYA SRI</h3>
+                                <h3 class="name">D.Sai Vijaya Sri</h3>
                                 <div class="social"><a href="https://www.facebook.com/vijaya.sri.33449138"><i class="fa fa-facebook-official"></i></a><a href="https://instagram.com/vijaya_1804?igshid=1j3gzcn2clxor"><i class="fa fa-instagram"></i></a></div>
                               </div>
                             </div>
@@ -180,4 +192,6 @@ Devonyes
                     </div>
             </div>
             </div>
+
+            <script src="../static/js/preloader.js"></script>
 {% endblock %}

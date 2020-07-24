@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <link rel="stylesheet" href="../static/css/preloader.css">
         <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="../static/fonts/font-awesome.min.css">
         <link rel="stylesheet" href="../static/css/Navigation-Clean.css">
@@ -18,8 +19,14 @@
     </head>
 
     <body style="padding-top: 85px;">
+
+        
         <nav class="navbar fixed-top navbar-light navbar-expand-md  navigation-clean">
-            <a href="/"><img src="../static/img/home icon.png" width="50px" class="behind"><img src="../static/img/logo.png" width="55" class="hover-fade fade-in" class="front"></a><img src="../static/img/name.png" width="150"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+
+            <a href="/">
+            {% block home %}
+            {% endblock %}
+                <img src="../static/img/home icon.png" width="50px" class="behind"><img src="../static/img/logo.png" width="55" class="hover-fade fade-in" class="front"></a><img src="../static/img/name.png" width="150"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
             
             {% if not session.user_id %}
