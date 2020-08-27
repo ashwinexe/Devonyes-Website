@@ -31,6 +31,10 @@ db = SQL("sqlite:///users.db")
 def index():
     return render_template("index.html")
 
+@app.route("/history")
+def history():
+    return render_template("history.html")
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     """ Log user in """
