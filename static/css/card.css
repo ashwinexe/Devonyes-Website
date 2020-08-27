@@ -136,9 +136,9 @@ section {
   overflow: hidden;
 }
 
-/* .module {
+.module {
   width: 48%;
-  min-height: 200px;
+  /* min-height: 200px;
   background: white;
   position: relative;
   float: left;
@@ -146,10 +146,9 @@ section {
   margin-right: 4%;
   margin-bottom: 4%;
   &:nth-child(even) {
-    margin-right: 0;
   }
-  box-shadow: 0 1px 3px rgba(black, 0.2);
-} */
+  box-shadow: 0 1px 3px rgba(black, 0.2); */
+}
  
 .come-in {
   transform: translateY(150px);
