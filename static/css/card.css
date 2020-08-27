@@ -136,7 +136,7 @@ section {
   overflow: hidden;
 }
 
-.module {
+/* .module {
   width: 48%;
   min-height: 200px;
   background: white;
@@ -149,7 +149,7 @@ section {
     margin-right: 0;
   }
   box-shadow: 0 1px 3px rgba(black, 0.2);
-}
+} */
  
 .come-in {
   transform: translateY(150px);
