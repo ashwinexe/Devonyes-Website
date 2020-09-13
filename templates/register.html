@@ -1,0 +1,16 @@
+{%extends "layout.html" %}
+
+{% block main %}
+<div class="container p-5">
+        <h1>Register</h1>
+        <div class="form-group">
+        <form action="/register" method="post">
+           <p> <input type="text" name="username" placeholder="New Username" autofocus class="form-control"></p>
+            <p><input type="text" name="password" placeholder="New Password"  class="form-control"></p>
+            <p><input type="text" name="confirmation" placeholder="Confirm Password"  class="form-control"></p>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+</div>
+
+{% endblock %}
