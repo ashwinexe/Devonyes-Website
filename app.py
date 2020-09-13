@@ -33,7 +33,12 @@ def index():
 
 @app.route("/history")
 def history():
-    return render_template("history.html")
+    dic = { "RIGOLADE-20":"SNIST","RAW-AND-REAL-19":"SNIST", "FEET-O-MANIA-19":'SreeVision • SNIST',"ANNUAL-DAY-19":"SNIST" 
+            , "Raw-&-Real-19":"Pramana • GITHAM", "Terpsichore-19":"Pearl • BITS PILANI","Elan-&-Nvision-19":"IIT-HYD",
+            "Hip-Hop-Convention-19":"VNR","FEET-O-MANIA-18":'SreeVision • SNIST',"RIGOLADE-18":"SNIST", "Terpsichore-18":"Pearl • BITS PILANI", "SpringSpree-17":"NIT-WARANGAL", "RIGOLADE-17":"SNIST", "FEET-O-MANIA-17":"SreeVision • SNIST"
+            , "ENCORE-15":"SNIST", "Terpsichore-15":"Pearl • BITS PILANI", "Terpsichore-12":"Pearl • BITS PILANI", "ANNUAL-DAY-11":"SNIST"}
+    dic2={"SpringSpree-17":"Watch", "Raw-&-Real-19":"watch now"}
+    return render_template("history.html", event=dic, v="Video Link")
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
